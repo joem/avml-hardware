@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:avm1c_combined_schematic-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLedger 11000 17000 portrait
 encoding utf-8
@@ -1330,19 +1329,6 @@ F 3 "~" H 1200 9650 50  0001 C CNN
 $EndComp
 NoConn ~ 950  9650
 $Comp
-L MCU_Module:Arduino_Nano_v3.x A?
-U 1 1 6058E8FF
-P 3300 9050
-AR Path="/5E6B5FB1/6058E8FF" Ref="A?"  Part="1" 
-AR Path="/6058E8FF" Ref="A1"  Part="1" 
-F 0 "A1" H 2800 8050 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 2750 7950 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 3450 8100 50  0001 L CNN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 3300 8050 50  0001 C CNN
-	1    3300 9050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR?
 U 1 1 6058E905
 P 3500 7950
@@ -1987,4 +1973,15 @@ Text Notes 7950 11150 0    100  ~ 0
 Unused Op Amp in MCP6002
 Text Notes 8150 13650 0    100  ~ 0
 Unused Op Amp in LM6172
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 6173A9AE
+P 3300 9050
+F 0 "A1" H 3050 7950 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 2900 7850 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 3300 9050 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 3300 9050 50  0001 C CNN
+	1    3300 9050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

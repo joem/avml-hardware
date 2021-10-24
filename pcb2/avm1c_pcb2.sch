@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:avm1c_pcb2-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLedger 11000 17000 portrait
 encoding utf-8
@@ -485,19 +484,6 @@ F 3 "~" H 3450 9850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3200 9850
-$Comp
-L MCU_Module:Arduino_Nano_v3.x A?
-U 1 1 5F4E4C73
-P 5550 9250
-AR Path="/5E6B5FB1/5F4E4C73" Ref="A?"  Part="1" 
-AR Path="/5F4E4C73" Ref="A1"  Part="1" 
-F 0 "A1" H 5050 8250 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 5000 8150 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 5700 8300 50  0001 L CNN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5550 8250 50  0001 C CNN
-	1    5550 9250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 5F4E4C79
@@ -1399,4 +1385,15 @@ F 3 "~" H 8450 11850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8450 11500 8450 11750
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 616E52BE
+P 5550 9250
+F 0 "A1" H 5050 8150 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5050 8050 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5550 9250 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5550 9250 50  0001 C CNN
+	1    5550 9250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
