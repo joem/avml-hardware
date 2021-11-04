@@ -4,7 +4,7 @@ EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
-Title "AVM1c: PCB1 and PCB2"
+Title "AVM1: PCB1 & PCB2"
 Date "2021-11-04"
 Rev "V1.2"
 Comp "LLAWN.com"
