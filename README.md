@@ -20,6 +20,13 @@ Usage
 <!-- FIXME: add this info! -->
 <!-- maybe link to another page somewhere? or have a usage file? -->
 
+About the schematic
+-------------------
+
+An easily readable PDF schematic for the module is in the `pcb/pdfs/` folder.
+
+There are two schematic PDFs there. The one with a version number is the exact correct schematic for that version. The one with "simple" in the name is a simplified schematic that doesn't break things across boards, so it's easier to follow the circuits (since some of the splitting across boards was a little messy). The simple schematic doesn't have all the parts from the actual schematic, the numbering of what parts it has might be off in some places, and it may not be the most up-to-date with any tweaks unfortunately. Use the simple schematic only for an easy general concept of the module. (Ideally, I'll eventually remove the simple schematic and have its parts in a detailed "explanation of the circuit" document.)
+
 About the PCBs/panel
 --------------------
 
