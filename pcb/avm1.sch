@@ -4,11 +4,11 @@ EELAYER END
 $Descr USLedger 17000 11000
 encoding utf-8
 Sheet 1 1
-Title "AVM1: PCB1 & PCB2"
-Date "2021-11-04"
-Rev "v1.?"
-Comp "LLAWN.com"
-Comment1 ""
+Title "AVML: PCB1 & PCB2"
+Date "2022-10-22"
+Rev "v1.3"
+Comp "LLAWN"
+Comment1 "LLAWN.com"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -1429,18 +1429,6 @@ Wire Wire Line
 	10950 2950 10600 2950
 Wire Wire Line
 	10050 3450 10050 3350
-Connection ~ 9750 6550
-$Comp
-L power:PWR_FLAG #FLG0105
-U 1 1 61EB1958
-P 9750 6550
-F 0 "#FLG0105" H 9750 6625 50  0001 C CNN
-F 1 "PWR_FLAG" V 9750 6678 50  0000 L CNN
-F 2 "" H 9750 6550 50  0001 C CNN
-F 3 "~" H 9750 6550 50  0001 C CNN
-	1    9750 6550
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	11350 1300 11350 1350
 Connection ~ 11350 1300
