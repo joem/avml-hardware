@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "AVM1: PCB1 & PCB2"
 Date "2021-11-04"
-Rev "V1.2"
+Rev "v1.?"
 Comp "LLAWN.com"
 Comment1 ""
 Comment2 ""
@@ -121,8 +121,6 @@ Text Label 6300 6950 2    50   ~ 0
 Y_CV_PRE_FRONT
 Text Label 6300 7050 2    50   ~ 0
 X_CV_PRE_FRONT
-Text Label 6300 8950 2    50   ~ 0
-RESET_SWITCH_FRONT
 Text Label 6300 2550 2    50   ~ 0
 VIDEO_OUT_POST_FRONT
 $Comp
@@ -283,8 +281,6 @@ Text Label 7000 7050 0    50   ~ 0
 X_CV_PRE_BACK
 Text Label 7000 6950 0    50   ~ 0
 Y_CV_PRE_BACK
-Text Label 7000 8950 0    50   ~ 0
-RESET_SWITCH_BACK
 Wire Wire Line
 	7000 9250 7150 9250
 Wire Wire Line
@@ -509,7 +505,7 @@ U 1 1 5E6A6079
 P 1250 1500
 F 0 "J2" H 1071 1433 50  0000 R CNN
 F 1 "Jack_X_CV" H 1400 1750 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 1250 1500 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_With3DModel" H 1250 1500 50  0001 C CNN
 F 3 "~" H 1250 1500 50  0001 C CNN
 	1    1250 1500
 	1    0    0    1   
@@ -520,7 +516,7 @@ U 1 1 5E6A7A48
 P 1300 3200
 F 0 "J5" H 1121 3133 50  0000 R CNN
 F 1 "Jack_Y_CV" H 1400 3450 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 1300 3200 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_With3DModel" H 1300 3200 50  0001 C CNN
 F 3 "~" H 1300 3200 50  0001 C CNN
 	1    1300 3200
 	1    0    0    1   
@@ -531,7 +527,7 @@ U 1 1 5E6A82F1
 P 1300 4850
 F 0 "J6" H 1121 4783 50  0000 R CNN
 F 1 "Jack_Index_CV" H 1450 5100 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 1300 4850 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_With3DModel" H 1300 4850 50  0001 C CNN
 F 3 "~" H 1300 4850 50  0001 C CNN
 	1    1300 4850
 	1    0    0    1   
@@ -542,7 +538,7 @@ U 1 1 5E6A8C3F
 P 1000 7050
 F 0 "J8" H 1000 6750 50  0000 C CNN
 F 1 "Jack_Trigger" H 900 7300 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 1000 7050 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_With3DModel" H 1000 7050 50  0001 C CNN
 F 3 "~" H 1000 7050 50  0001 C CNN
 	1    1000 7050
 	1    0    0    1   
@@ -553,7 +549,7 @@ U 1 1 5E6A94A6
 P 5200 1750
 F 0 "J1" H 5020 1775 50  0000 R CNN
 F 1 "Video_Output" H 5500 1450 50  0000 R CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 5200 1750 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles_With3DModel" H 5200 1750 50  0001 C CNN
 F 3 "~" H 5200 1750 50  0001 C CNN
 	1    5200 1750
 	-1   0    0    1   
@@ -1101,21 +1097,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 1500 2400 1900
 Connection ~ 2400 1500
-$Comp
-L Switch:SW_Push SW3
-U 1 1 5F68F578
-P 4250 6100
-F 0 "SW3" H 4250 6385 50  0000 C CNN
-F 1 "Button_Arduino_Reset" H 4250 6294 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H9.5mm" H 4250 6300 50  0001 C CNN
-F 3 "~" H 4250 6300 50  0001 C CNN
-	1    4250 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 6200 4050 6100
-Wire Wire Line
-	4450 6100 4700 6100
 Wire Wire Line
 	1200 10000 1500 10000
 Wire Wire Line
@@ -1208,17 +1189,6 @@ F 1 "GND1" H 1505 10027 50  0000 C CNN
 F 2 "" H 1500 10200 50  0001 C CNN
 F 3 "" H 1500 10200 50  0001 C CNN
 	1    1500 10200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND1 #PWR0114
-U 1 1 618BCF34
-P 4050 6200
-F 0 "#PWR0114" H 4050 5950 50  0001 C CNN
-F 1 "GND1" H 4055 6027 50  0000 C CNN
-F 2 "" H 4050 6200 50  0001 C CNN
-F 3 "" H 4050 6200 50  0001 C CNN
-	1    4050 6200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1413,8 +1383,6 @@ Text Label 4650 4350 0    50   ~ 0
 TRIGGER_SWITCH_FRONT
 Text Label 3500 5350 0    50   ~ 0
 INDEX_CV_FRONT
-Text Label 4700 6100 0    50   ~ 0
-RESET_SWITCH_FRONT
 Text Label 2600 3200 0    50   ~ 0
 Y_CV_PRE_FRONT
 Text Label 2550 1500 0    50   ~ 0
@@ -1449,8 +1417,6 @@ Text Label 8300 1200 2    50   ~ 0
 X_CV_PRE_BACK
 Text Label 8400 3800 2    50   ~ 0
 Y_CV_PRE_BACK
-Text Label 12200 1750 0    50   ~ 0
-RESET_SWITCH_BACK
 Text Label 10700 2050 2    50   ~ 0
 MODE_SWITCH_BACK
 Text Label 10700 2750 2    50   ~ 0
@@ -1743,7 +1709,7 @@ U 1 1 6173A9AE
 P 11450 2350
 F 0 "A1" H 11200 1250 50  0000 C CNN
 F 1 "Arduino_Nano_v3.x" H 11050 1150 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 11450 2350 50  0001 C CIN
+F 2 "jwm_kicad_footprints_misc:Arduino_Nano_WithMFHeadersAnd3DModel" H 11450 2350 50  0001 C CIN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 11450 2350 50  0001 C CNN
 	1    11450 2350
 	1    0    0    -1  
@@ -1756,8 +1722,6 @@ Text Notes 13500 5300 0    100  ~ 0
 LM6172 Power and Bypass Caps
 Wire Wire Line
 	10700 2750 10950 2750
-Wire Wire Line
-	12200 1750 11950 1750
 Wire Wire Line
 	10700 2150 10950 2150
 Wire Wire Line
@@ -2013,7 +1977,7 @@ AR Path="/5E6B5FB1/6058E99D" Ref="C?"  Part="1"
 AR Path="/6058E99D" Ref="C15"  Part="1" 
 F 0 "C15" V 10800 9600 50  0000 L CNN
 F 1 "10uF 25V" V 11100 9450 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 10950 9650 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:CP_Radial_D5.0mm_P2.00mm_BiggerPlusSign" H 10950 9650 50  0001 C CNN
 F 3 "~" H 10950 9650 50  0001 C CNN
 	1    10950 9650
 	1    0    0    -1  
@@ -2026,7 +1990,7 @@ AR Path="/5E6B5FB1/6058E997" Ref="C?"  Part="1"
 AR Path="/6058E997" Ref="C14"  Part="1" 
 F 0 "C14" V 10800 9200 50  0000 L CNN
 F 1 "10uF 25V" V 11100 9100 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 10950 9250 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:CP_Radial_D5.0mm_P2.00mm_BiggerPlusSign" H 10950 9250 50  0001 C CNN
 F 3 "~" H 10950 9250 50  0001 C CNN
 	1    10950 9250
 	1    0    0    -1  
@@ -2055,19 +2019,6 @@ F 1 "1N4001" H 9850 9700 50  0000 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9850 9675 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9850 9850 50  0001 C CNN
 	1    9850 9850
-	1    0    0    -1  
-$EndComp
-$Comp
-L jwm_kicad_symbols_misc:Eurorack_Header_LZX J?
-U 1 1 6058E985
-P 8750 9550
-AR Path="/5E6B5FB1/6058E985" Ref="J?"  Part="1" 
-AR Path="/6058E985" Ref="J9"  Part="1" 
-F 0 "J9" H 8808 10065 50  0000 C CNN
-F 1 "Eurorack_Header_LZX" H 8808 9974 50  0000 C CNN
-F 2 "jwm_kicad_footprints_misc:IDC-Header_2x08_P2.54mm_Vertical_EurorackPower" H 8850 9600 50  0001 C CNN
-F 3 "" H 8850 9600 50  0001 C CNN
-	1    8750 9550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2161,7 +2112,7 @@ AR Path="/5E6B5FB1/6058E950" Ref="U?"  Part="3"
 AR Path="/6058E950" Ref="U1"  Part="3" 
 F 0 "U1" H 13900 6200 50  0000 L CNN
 F 1 "LM6172" H 13800 6100 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 14300 6150 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:DIP-8_W7.62mm_MediumOffsetPads" H 14300 6150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm6172.pdf" H 14300 6150 50  0001 C CNN
 	3    14300 6150
 	1    0    0    -1  
@@ -2229,7 +2180,7 @@ AR Path="/5E6B5FB1/6058E92A" Ref="U?"  Part="3"
 AR Path="/6058E92A" Ref="U2"  Part="3" 
 F 0 "U2" V 12600 7000 50  0000 L CNN
 F 1 "MCP6002-xP" V 12900 6850 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 12850 7100 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:DIP-8_W7.62mm_MediumOffsetPads" H 12850 7100 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 12850 7100 50  0001 C CNN
 	3    12850 7100
 	1    0    0    -1  
@@ -2380,7 +2331,7 @@ U 1 1 6058E8A5
 P 14900 3850
 F 0 "U3" H 15200 4250 50  0000 C CNN
 F 1 "LM1881" H 15200 3550 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 14900 3850 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:DIP-8_W7.62mm_MediumOffsetPads" H 14900 3850 50  0001 C CNN
 F 3 "" H 14900 3850 50  0001 C CNN
 	1    14900 3850
 	1    0    0    -1  
@@ -2514,7 +2465,7 @@ U 2 1 6058E845
 P 14800 8550
 F 0 "U1" H 14800 8917 50  0000 C CNN
 F 1 "LM6172" H 14800 8826 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 14800 8550 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:DIP-8_W7.62mm_MediumOffsetPads" H 14800 8550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm6172.pdf" H 14800 8550 50  0001 C CNN
 	2    14800 8550
 	1    0    0    -1  
@@ -2525,7 +2476,7 @@ U 1 1 6058E83F
 P 14500 1100
 F 0 "U1" H 14500 1467 50  0000 C CNN
 F 1 "LM6172" H 14500 1376 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 14500 1100 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:DIP-8_W7.62mm_MediumOffsetPads" H 14500 1100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm6172.pdf" H 14500 1100 50  0001 C CNN
 	1    14500 1100
 	1    0    0    -1  
@@ -2594,7 +2545,7 @@ U 2 1 6058E803
 P 9000 4300
 F 0 "U2" H 9050 4100 50  0000 C CNN
 F 1 "MCP6002-xP" H 9150 4500 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 9000 4300 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:DIP-8_W7.62mm_MediumOffsetPads" H 9000 4300 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9000 4300 50  0001 C CNN
 	2    9000 4300
 	1    0    0    1   
@@ -2605,7 +2556,7 @@ U 1 1 6058E7FD
 P 8950 1700
 F 0 "U2" H 9000 1500 50  0000 C CNN
 F 1 "MCP6002-xP" H 9100 1950 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 8950 1700 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:DIP-8_W7.62mm_MediumOffsetPads" H 8950 1700 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 8950 1700 50  0001 C CNN
 	1    8950 1700
 	1    0    0    1   
@@ -2680,7 +2631,7 @@ U 1 1 61961780
 P 15750 4650
 F 0 "U4" H 16050 5050 50  0000 C CNN
 F 1 "LM1881" H 16050 4350 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 15750 4650 50  0001 C CNN
+F 2 "jwm_kicad_footprints_misc:SOIC-8_3.9x4.9mm_P1.27mm_LongPads" H 15750 4650 50  0001 C CNN
 F 3 "" H 15750 4650 50  0001 C CNN
 	1    15750 4650
 	1    0    0    -1  
@@ -2749,4 +2700,32 @@ F 3 "" H 15750 4250 50  0001 C CNN
 	1    15750 4250
 	1    0    0    -1  
 $EndComp
+$Comp
+L jwm_kicad_symbols_misc:Eurorack_Header_LZX_NC-5vCvGate J9
+U 1 1 638853A5
+P 8750 9550
+F 0 "J9" H 8783 10065 50  0000 C CNN
+F 1 "Eurorack_Header_LZX_NC-5vCvGate" H 8700 9950 50  0000 C CNN
+F 2 "jwm_kicad_footprints_misc:IDC-Header_2x08_P2.54mm_Vertical_EurorackPower" H 8850 9600 50  0001 C CNN
+F 3 "" H 8850 9600 50  0001 C CNN
+	1    8750 9550
+	1    0    0    -1  
+$EndComp
+Text Notes 16000 5050 0    50   ~ 0
+SMD
+Text Notes 15000 4250 0    50   ~ 0
+Through-hole
+NoConn ~ 16250 4650
+NoConn ~ 16250 4750
+NoConn ~ 11950 1750
+Wire Wire Line
+	7000 8950 7150 8950
+Wire Wire Line
+	7150 8950 7150 9050
+Connection ~ 7150 9050
+Wire Wire Line
+	6300 8950 6150 8950
+Wire Wire Line
+	6150 8950 6150 9050
+Connection ~ 6150 9050
 $EndSCHEMATC
