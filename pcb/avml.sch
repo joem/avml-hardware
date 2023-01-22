@@ -2716,4 +2716,8 @@ Wire Wire Line
 Wire Wire Line
 	6150 8950 6150 9050
 Connection ~ 6150 9050
+Text Notes 10900 2650 2    50   ~ 0
+SYNC OUT (UNUSED)
+Text Notes 10900 2850 2    50   ~ 0
+AUDIO OUT (UNUSED)
 $EndSCHEMATC
