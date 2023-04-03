@@ -35,6 +35,8 @@ I know it's a little messy that way, but it made working with the boards easier,
 
 The panel lives in the `panel` folder (even though it's also a PCB).
 
+Opening the KiCad projects requires KiCad 6 at a minimum. I've removed the old KiCad 5 files.
+
 ### pcb1
 
 PCB1 is the controls board, with the jacks, switches, and buttons on it. Also since space was tight, there are some parts here that would normally have on the main board.
